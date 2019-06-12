@@ -15,6 +15,8 @@
     "wdio-trueautomation-service": "^0.3.7"
   },
   "dependencies": {
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
     "webdriverio": "^5.3.0"
   }
 }
