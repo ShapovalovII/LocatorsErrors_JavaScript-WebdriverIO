@@ -7,7 +7,7 @@ describe('Verification of information output the locators errors.', () => {
 
         // The locator name does not exist in the database
         var withTALocator = ta('SmartLocator:Not_in_the_database');
-        var Error = 'NOT_FOUND';
+        var Error = 'There is no such TA Locator in the objects repository. Element \'SmartLocator:Not_in_the_database\' was not found in the objects repository of \'TestTA\' project.';
 
         utils.checkErrorMessage(withTALocator, Error);
     });

@@ -6,8 +6,8 @@ describe('Verification of information output the locators errors.', () => {
         browser.url('https://accounts.google.com');
 
         // Used locator taken from another page
-        var withTALocator = ta('Zachet:Zachet_Div_Initial', '.logo.top-menu');
-        var Error = 'NOT_FOUND';
+        var withTALocator = ta('Practike:Frame:iframe', '#courses-iframe');
+        var Error = 'Element was not found on the page. Element \'Practike:Frame:iframe\' with such locator is not on this page and could not be detected by TrueAutomation.';
 
         utils.checkErrorMessage(withTALocator, Error);
     });

@@ -7,7 +7,7 @@ describe('Verification of information output the locators errors.', () => {
 
         // This locator is made on another page
         var withTALocator = ta('Translate:Rus1');
-        var Error = 'NOT_FOUND';
+        var Error = 'Element was not found on the page. Element \'Translate:Rus1\' with such locator is not on this page and could not be detected by TrueAutomation.';
 
         utils.checkErrorMessage(withTALocator, Error);
     });
