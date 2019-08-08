@@ -6,7 +6,7 @@ describe('Verification of information output the locators errors.', () => {
         browser.url('https://accounts.google.com');
 
         var withTALocator = ta('ta-Name', '//span[@class=\'RveJvd snByac\']');
-        var Error = 'TrueAutomation locator ta-Name contains unsupported characters. Please make sure to use only letters, numbers, colon and underscore symbols in locator names.';
+        var Error = 'Such TrueAutomation locator name ta-Name can not be used. Locator name may consist of several parts separated by a colon. English letters, numbers and single underscores that are not at the beginning or at the end may be used.';
 
         utils.checkErrorMessage(withTALocator, Error);
     });
