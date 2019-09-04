@@ -6,8 +6,8 @@ describe('Verification of information output the locators errors.', () => {
         browser.url('https://accounts.google.com');
 
         // Used locator taken from another page
-        var withTALocator = ta('Practike:Frame:iframe', '#courses-iframe');
-        var Error = 'Element was not found on the page. Element \'Practike:Frame:iframe\' with such locator is not on this page and could not be detected by TrueAutomation.';
+        var withTALocator = ta('Google:test:div', '//div[@class=\'sl-more tlid-open-source-language-list\']');
+        var Error = 'Element was not found on the page. Element \'Google:test:div\' with such locator is not on this page and could not be detected by TrueAutomation.';
 
         utils.checkErrorMessage(withTALocator, Error);
     });

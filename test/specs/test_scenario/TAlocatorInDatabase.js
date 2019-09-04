@@ -6,8 +6,8 @@ describe('Verification of information output the locators errors.', () => {
         browser.url('https://accounts.google.com');
 
         // This locator is made on another page
-        var withTALocator = ta('Translate:Rus1');
-        var Error = 'Element was not found on the page. Element \'Translate:Rus1\' with such locator is not on this page and could not be detected by TrueAutomation.';
+        var withTALocator = ta('Google:Translate');
+        var Error = 'Element was not found on the page. Element \'Google:Translate\' with such locator is not on this page and could not be detected by TrueAutomation.';
 
         utils.checkErrorMessage(withTALocator, Error);
     });
