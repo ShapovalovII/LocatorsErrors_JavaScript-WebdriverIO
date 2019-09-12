@@ -7,7 +7,7 @@ describe('Verification of information output the locators errors.', () => {
 
         // Missing dot "."
         var withTALocator = ta('taName', '.RveJvd snByac');
-        var Error = 'Unable to locate element { using: "css selector", selector: ".RveJvd snByac" }';
+        var Error = "Unable to locate element { using: 'css selector', selector: '.RveJvd snByac' }";
 
         utils.checkErrorMessage(withTALocator, Error);
     });
@@ -19,7 +19,7 @@ describe('Verification of information output the locators errors.', () => {
 
         // Added exclamation mark "!"
         var withTALocator = ta('taName', '![id=\'identifierNext\']');
-        var Error = 'Unable to locate element { using: "css selector", selector: "![id=\'identifierNext\']" }';
+        var Error = "Unable to locate element { using: 'css selector', selector: '![id='identifierNext']' }";
 
         utils.checkErrorMessage(withTALocator, Error);
     });
@@ -31,7 +31,7 @@ describe('Verification of information output the locators errors.', () => {
 
         // Missing two slashes "//"
         var withTALocator = ta('taName', 'span[@class=\'RveJvd snByac\']');
-        var Error = 'Unable to locate element { using: "css selector", selector: "span[@class=\'RveJvd snByac\']" }';
+        var Error = "Unable to locate element { using: 'css selector', selector: 'span[@class='RveJvd snByac']' }";
 
         utils.checkErrorMessage(withTALocator, Error);
     });
@@ -43,7 +43,7 @@ describe('Verification of information output the locators errors.', () => {
 
         // Added exclamation mark "!"
         var withTALocator = ta('taName', '!*=Справка');
-        var Error = 'Unable to locate element { using: "css selector", selector: "!*=Справка" }';
+        var Error = "Unable to locate element { using: 'css selector', selector: '!*=Справка' }";
 
         utils.checkErrorMessage(withTALocator, Error);
     });
